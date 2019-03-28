@@ -36,7 +36,7 @@ with open('requestor_map.json', 'r') as file3:
 with open('location_map.json', 'r') as file4:
     location_map = json.load(file4)
   
-with open('client_fixed_map.json', 'r') as file5:  # Using the fixed client map file.
+with open('client_map.json', 'r') as file5:  # Using the fixed client map file.
     client_map = json.load(file5)
     
 df['Team'] = df['Team'].map(team_map)   # Now use pandas to iterate through each column and map the values to numbers
