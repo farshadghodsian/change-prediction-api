@@ -95,4 +95,4 @@ def make_prediction(requestor, classification, client, location):
     return jsonify({'team': predicted_team, 'teamID' : predicted_teamid})
 
 
-app.run(port=5000)
+app.run(host='0.0.0.0', port=5000)
